@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>FlipPhone.js</title>
+		<title>FlipPhone.js | A jQuery plugin for 'flipping' letters to numbers via CSS3 animations.</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
@@ -15,37 +15,30 @@
 
 		<script src="demo/js/vendor/jquery-1.10.1.min.js"></script>
 		<script src="demo/js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="demo/js/jquery.fittext.js"></script>
-
-		<style type="text/css">
-			@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
-
-			body {
-				text-align: center;
-				padding: 2em;
-			}
-
-			h1 {
-				display: block;
-			}
-
-			.tel {
-				font-family: 'Open Sans';
-				font-size: 100px;
-				color: #333;
-			}
-		</style>
 	</head>
 	<body>
 
-		<a class="tel fittext" href="tel:1-800-FLP-PHNE">1-800-FLP-PHNE</a>
+		<a class="tel fittext" href="tel:1-800-357-7463">1-800-FLP-PHNE</a>
+
+		<h1><strong>FlipPhone.js</strong> is a jQuery library that makes it easy to 'flip' letters into telephone numbers.</h1>
+
+		<a href="https://github.com/mike-zarandona/FlipPhone.js" class="button" target="_blank">Download on GitHub</a>
+
+		<p class="fixed">
+			<a href="http://twitter.com/mikezarandona" target="_blank">@mikezarandona</a> | 
+			<a href="http://mikezarandona.com" target="_blank">http://mikezarandona.com</a>
+		</p>
+
+
 
 		<script src="src/jquery.flipphone.js"></script>
 
 		<script>
 			(function($){
 				$(document).ready(function() {
+
 					$('.tel').flipPhone();
+
 				});
 			})(jQuery);
 		</script>

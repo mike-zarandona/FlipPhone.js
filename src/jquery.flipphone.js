@@ -27,6 +27,16 @@ Usage:			$('.phone-number').flipPhone();
 			// Append a special class of .flip-phone, and save it in a var
 			elem.addClass('flip-phone');
 
+			// Attach a handler for RWD
+			var currentWidth = 0;
+
+			$(window).on('resize', function() {
+				if (elem.width != currentWidth) {
+					console.log('refire!');
+					normalizeWidths(elem);
+				}
+			});
+
 			// Break the .html() into characters, wrap each that is a-z / A-Z
 			var characters = elem.text().split('');
 
@@ -35,7 +45,7 @@ Usage:			$('.phone-number').flipPhone();
 
 			// Loop through all the characters in the string, and wrap .letter around each letter
 			for (i = 0; i < characters.length; i++) {
-				console.log(i + ' = ' + characters[i]);
+
 				if (isNaN(characters[i]) && (characters[i] != '-') && (characters[i] != '.') && (characters[i] != '/')) {
 
 					// Evaluate based on upper case
@@ -112,14 +122,19 @@ Usage:			$('.phone-number').flipPhone();
 			var maxWidth = 0;
 			var widestLetter = null;
 
-			elem.find('.letter').each(function() {
-				if ( $(this).width() > maxWidth ) {
-					maxWidth = $(this).width();
-					widestSpan = $(this);
-				}
-			});
-			elem.find('.letter').css('min-width', maxWidth + 'px');
+			normalizeWidths(elem);
 
+			function normalizeWidths(nrmlzr) {
+
+				nrmlzr.find('.letter').each(function() {
+
+					if ( $(this).width() > maxWidth ) {
+						maxWidth = $(this).width();
+						widestSpan = $(this);
+					}
+				});
+				nrmlzr.find('.letter').css('min-width', maxWidth + 'px');
+			}
 
 			// Build the dynamic CSS to control the animations
 			var dynamicCSS = '\
