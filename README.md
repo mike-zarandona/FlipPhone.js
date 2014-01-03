@@ -2,10 +2,10 @@
 **FlipPhone** is a jQuery plugin for 'flipping' letters to numbers via CSS3 animations.
 
 ## Current Version
-v0.1
+v1.0
 
 ## Demo
-Demo can be found here:  [http://mikezarandona.github.io/FlipPhone.js](http://mikezarandona.github.io/FlipPhone.js)
+Demo can be found here:  [http://mike-zarandona.github.io/FlipPhone.js](http://mike-zarandona.github.io/FlipPhone.js)
 
 ## Quick Start
 1. Link to jQuery
@@ -22,7 +22,10 @@ Demo can be found here:  [http://mikezarandona.github.io/FlipPhone.js](http://mi
 
 **`letterLimit`** &nbsp; [*int*] &nbsp; Max number of letters to 'flip' into numbers.
 
-## Animation Options
 
 ## License
 FlipPhone.js is licensed under the [Cretive Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/deed.en_US).  You are free to share and adapt this work for any purpose including commercial with appropriate credit and indications if changes were made.  
+
+
+## Author
+By Mike Zarandona &nbsp;|&nbsp; [@mikezarandona](http://twitter.com/mikezarandona) &nbsp;|&nbsp; [mikezarandona.com](http://mikezarandona.com)

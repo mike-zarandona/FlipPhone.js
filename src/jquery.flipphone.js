@@ -1,9 +1,9 @@
 /*
 **********************************************************
 FlipPhone.js
-Version:		v0.1
-Release:		_______ 00 2014
-Site:			http://
+Version:		v1.0
+Release:		January 02 2014
+Site:			http://mike-zarandona.github.io/FlipPhone.js
 Author:			Mike Zarandona | http://mikezarandona.com | @mikezarandona
 License:		Licenced under the Creative Commons Attribution 3.0 Unported Free Culture License.
 				You are free to share, copy, distribute, transmit, remix, adapt, and make commercial
